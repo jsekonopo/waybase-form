@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MaterialTable from "material-table";
-import WayBaseNavTabs from './WayBaseNavTabs';
+import WayBaseListingInformation from "./WayBaseListingInformation";
 
 class WayBaseDataTable extends Component {
   constructor(props) {
@@ -50,10 +50,10 @@ class WayBaseDataTable extends Component {
   render() {
       const editablePanel = [
         {
-          tooltip: 'More Information',
+          tooltip: 'More',
           render: rowData => {
             return (
-            <WayBaseNavTabs />
+            <WayBaseListingInformation />
             )
           },
         },

@@ -7,8 +7,10 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import CommonName from './CommonName';
-import AddressForm from './AddressForm';
+import WayBaseContactInformation from './WayBaseContactInformation';
+import WayBaseListingBasics from './WayBaseListingBasics';
+import WayBaseListingDetails from './WayBaseListingDetails';
+import WayBasePeopleAndImages from './WayBasePeopleAndImages';
 
 
 function TabPanel(props) {
@@ -60,7 +62,7 @@ function LinkTab(props) {
 //   },
 // }));
 
-export default function WayBaseNavTabs() {
+export default function WayBaseListingInformation() {
 //   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -77,19 +79,23 @@ export default function WayBaseNavTabs() {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Basic Information" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Contact Information" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Other Information" href="/spam" {...a11yProps(2)} />
+          <LinkTab label="Contact Information" href="/#" {...a11yProps(0)} />
+          <LinkTab label="Basic Information" href="/#" {...a11yProps(1)} />
+          <LinkTab label="Listing Details" href="/#" {...a11yProps(2)} />
+          <LinkTab label="Listing Details" href="#" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <CommonName/>
+        <WayBaseContactInformation />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AddressForm></AddressForm>
+        <WayBaseListingBasics/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <WayBaseListingDetails />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <WayBasePeopleAndImages />
       </TabPanel>
     </Container>
   );
