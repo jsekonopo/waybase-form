@@ -42,7 +42,7 @@ export default class WayBaseListingImage extends Component {
           <Card>
             <CardContent>Render the uploaded image here</CardContent>
             <CardActions>
-              <Button onClick={this.handleOpen}>Add Logo</Button>
+              <Button onClick={this.handleOpen}>Add {this.props.imageType}</Button>
             </CardActions>
           </Card>
         </Box>

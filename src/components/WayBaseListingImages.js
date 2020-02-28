@@ -7,7 +7,7 @@ export default function WayBaseListingImages(){
         <React.Fragment>
             <WayBaseSectionHeading headingName="Listing Images" />
             <WayBaseListingImage imageType="Logo" />
-            <WayBaseListingImage imageType="Logo" />
+            <WayBaseListingImage imageType="Banner" />
         </React.Fragment>
     )
 }

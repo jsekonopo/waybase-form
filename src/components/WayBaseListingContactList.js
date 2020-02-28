@@ -22,6 +22,7 @@ export default function WayBaseListingContactList() {
   return (
     <React.Fragment>
       <MaterialTable
+        title={null}
         columns={[
           {
             title: "Avatar",

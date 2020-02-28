@@ -1,10 +1,12 @@
 import React from "react";
 import { TextField, FormControlLabel, Checkbox } from "@material-ui/core";
 import WayBaseLink from "./WayBaseLink";
+import WayBaseListingImage from "./WayBaseListingImage";
 
 export default function WayBaseListingContact(props) {
   return (
     <React.Fragment>
+      <WayBaseListingImage imageType="Avatar" />
       <TextField
         fullWidth
         id="contactSalutaion"
@@ -17,12 +19,7 @@ export default function WayBaseListingContact(props) {
         name="SalutafirstName"
         label="First Name"
       />
-      <TextField
-        fullWidth
-        id="lastName"
-        name="lastName"
-        label="Last Name"
-      />
+      <TextField fullWidth id="lastName" name="lastName" label="Last Name" />
       <TextField
         fullWidth
         id="titlePosition"
@@ -43,21 +40,11 @@ export default function WayBaseListingContact(props) {
       />
       <WayBaseLink linkType="Personal link(s)" />
       <FormControlLabel
-        control={
-          <Checkbox
-            value="checkedB"
-            color="primary"
-          />
-        }
+        control={<Checkbox value="checkedB" color="primary" />}
         label="Senior Leader?"
       />
       <FormControlLabel
-        control={
-          <Checkbox
-            value="checkedA"
-            color="primary"
-          />
-        }
+        control={<Checkbox value="checkedA" color="primary" />}
         label="Allow public profile?"
       />
     </React.Fragment>

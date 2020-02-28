@@ -82,7 +82,7 @@ export default function WayBaseListingInformation() {
           <LinkTab label="Contact Information" href="/#" {...a11yProps(0)} />
           <LinkTab label="Basic Information" href="/#" {...a11yProps(1)} />
           <LinkTab label="Listing Details" href="/#" {...a11yProps(2)} />
-          <LinkTab label="Listing Details" href="#" {...a11yProps(3)} />
+          <LinkTab label="People And Images" href="#" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
